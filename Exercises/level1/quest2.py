@@ -2,7 +2,10 @@ import sys
 
 def calculate(number):
 	result = 1
-	for i in range(1, number):
+	if number == 0:
+		return result
+
+	for i in range(1, number+1):
 		result = result * i
 	return result
 	
